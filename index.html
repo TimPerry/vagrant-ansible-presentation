@@ -58,9 +58,31 @@
     <div class="step" data-x="6000" data-y="4000" data-scale="2">
         <p>Another advantage of having zero investment is that we truly experiment. Got stuck patching a legacy system and totally messed up your sandbox? No problem. <b>vagrant destroy && vagrant up</b> and you are back up and running.
     </div>
+
+    <div class="step" data-x="-1900" data-y="-2600" data-scale="1" data-rotate="90">
+        <img src="img/vagrant_halt.jpg">
+    </div>
+
+    <div class="step" data-x="-4000" data-y="-2600" data-scale="1" data-rotate="45">
+        <p><b>Vagrant commands:</b></p>
+        <ul>
+            <li>- vagrant up</li>
+            <li>- vagrant halt</li>
+            <li>- vagrant suspend</li>
+            <li>- vagrant reload</li>
+            <li>- vagrant destroy</li>
+            <li>- Vagrant provision</li>
+        </ul>
+    </div>
     
+    <div class="step" data-x="-4000" data-y="-9000" data-scale="5" data-rotate="0">
+        <p>You can also pass "--provision" to the up and reload commands. This will run all the provsions, as by default it only runs the simple bash script provisoner.</p>
+        <br/>
+        <p>e.g. "<b>vagrant reload --provision</b>" will reload the sandbox and rerun the provisioners again.</p>
+    </div>
+
     <div class="step" data-x="-8000" data-y="4000" data-scale="2">
-        <p>Lets have a look at our Vagrantfile<p>
+        <p>Anyway...lets have a look at our Vagrantfile<p>
     </div>
     
     <div class="step" data-x="2000" data-y="6000" data-scale="1" data-rotate="45">
@@ -80,7 +102,7 @@
     </div>
     
     <div class="step" data-x="8000" data-y="-9000" data-rotate="180" data-scale="2">
-        <p>The roles use a folder structure:</p>
+        <p><b>The roles use a folder structure:</b></p>
         <ul>
             <li>- files</li>
             <li>- handlers</li>
